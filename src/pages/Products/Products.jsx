@@ -8,7 +8,7 @@ const Products = () => {
 		<Header/>
 		<section className='section products'>
 			<div className='container'>
-				<h2 className='products-title'>Featured case studies</h2>
+				<h2 className='products-title'>Featured case studies -demo</h2>
 			</div>
 		</section>
 		</>

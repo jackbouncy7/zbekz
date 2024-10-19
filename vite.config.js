@@ -19,4 +19,4 @@ export default defineConfig({
 })
 
 // PARALLAX
-// TEAM
+// TEAM ✅
