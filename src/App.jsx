@@ -5,9 +5,9 @@ import { Public } from "./pages/Public/Public";
 function App() {
   return (
     <>
-      <Routes>
-        <Route path="/*" element={<Public />} />
-      </Routes>
+      {/* <Routes> */}
+      {/*   <Route path="/*" element={<Public />} /> */}
+      {/* </Routes> */}
     </>
   );
 }
