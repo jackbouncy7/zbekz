@@ -5,11 +5,16 @@
 	margin-top: 70px;
 	height: 568px;
 
-	background-image: url('../../../public/assets/images/products/project1.png');	
+	background-image: url('/assets/images/products/project1.png');	
 	background-position: right;
 	background-size: cover;
 	background-color: #161413;
 	border-radius: 32px;
+	transition: opacity 0.1s ease-out;
+
+	&:hover {
+		opacity: 0.97;
+	}
 
 	&:hover .products__link {
 		color: #cecbca;
@@ -21,7 +26,7 @@
 }
 
 .products__content {
-	width: 550px;
+	width: 600px;
 	padding: 40px;
 }
 
@@ -54,5 +59,44 @@
 	color: #fff;
 	&:hover {
 		color: #cecbca;
+	}
+}
+
+// MEDIA
+@media only screen and (max-width: 991px) {
+	.products__title {
+		font-size: 60px;
+	}
+
+	.products__content {
+		width: 100%;
+		border-radius: 32px;
+		background: rgba(22,20,19,.698);
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	.products__box {
+		margin-top: 40px;
+	}
+
+	.products__title {
+		font-size: 40px;
+	}
+
+	.products__content {
+		padding: 15px;
+	}
+
+	.products__title--content {
+		font-size: 25px;
+	}
+}
+
+@media only screen and (max-width: 350px) {
+	.products__content span {
+		width: fit-content;
+		display: block;
+		margin-bottom: 10px;
 	}
 }
