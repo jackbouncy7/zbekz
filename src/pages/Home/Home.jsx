@@ -342,70 +342,70 @@ const Home = () => {
       {/*<!-- ***** Counter Parallax End ***** -->*/}
 
       {/* <!-- ***** Blog Start ***** --> */}
-      <section className="section pbottom-70">
-      <div className="container">
-        <div className="row">
-          <div className="col-lg-12">
-            <div className="center-heading">
-              <h2 className="section-title">Latest Blog Posts</h2>
-            </div>
-          </div>
-          <div className="offset-lg-3 col-lg-6">
-            <div className="center-text">
-              <p>Fusce placerat pretium mauris, vel sollicitudin elit lacinia vitae. Quisque sit amet nisi
-                erat.</p>
-            </div>
-          </div>
-        </div>
-        <div className="row">
-          <div className="col-lg-4 col-md-6 col-sm-12">
-            <div className="blog-post-thumb">
-              <div className="img">
-                <img src={Blog1} alt="blog pic" />
-              </div>
-              <h3>
-                <a href="blog-single.html">5 steps to becoming GDPR compliant on mobile apps</a>
-              </h3>
-              <div className="text">
-                Mauris tellus sem, ultrices varius nisl at, convallis iaculis mauris. Sed eget sem vitae
-                purus tempus dignissim.
-              </div>
-              <a href="blog-single.html" className="btn-primary-line">Read More</a>
-            </div>
-          </div>
-          <div className="col-lg-4 col-md-6 col-sm-12">
-            <div className="blog-post-thumb">
-              <div className="img">
-                <img src={Blog2} alt="blog pic" />
-              </div>
-              <h3>
-                <a href="blog-single.html">Measuring app success through mobile analytics</a>
-              </h3>
-              <div className="text">
-                Cras imperdiet faucibus sem, a dignissim urna feugiat sed. Interdum et malesuada fames ac
-                ante ipsum primis in faucibus.
-              </div>
-              <a href="blog-single.html" className="btn-primary-line">Read More</a>
-            </div>
-          </div>
-          <div className="col-lg-4 col-md-6 col-sm-12">
-            <div className="blog-post-thumb">
-              <div className="img">
-                <img src={Blog3} alt="blog pic" />
-              </div>
-              <h3>
-                <a href="blog-single.html">How accessibility will influence your app development</a>
-              </h3>
-              <div className="text">
-                Quisque euismod nec lacus sit amet maximus. Ut convallis sagittis lorem auctor malesuada.
-                Morbi auctor tortor eu risus condimentum.
-              </div>
-              <a href="blog-single.html" className="btn-primary-line">Read More</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      </section>
+      {/* <section className="section pbottom-70"> */}
+      {/* <div className="container"> */}
+      {/*   <div className="row"> */}
+      {/*     <div className="col-lg-12"> */}
+      {/*       <div className="center-heading"> */}
+      {/*         <h2 className="section-title">Latest Blog Posts</h2> */}
+      {/*       </div> */}
+      {/*     </div> */}
+      {/*     <div className="offset-lg-3 col-lg-6"> */}
+      {/*       <div className="center-text"> */}
+      {/*         <p>Fusce placerat pretium mauris, vel sollicitudin elit lacinia vitae. Quisque sit amet nisi */}
+      {/*           erat.</p> */}
+      {/*       </div> */}
+      {/*     </div> */}
+      {/*   </div> */}
+      {/*   <div className="row"> */}
+      {/*     <div className="col-lg-4 col-md-6 col-sm-12"> */}
+      {/*       <div className="blog-post-thumb"> */}
+      {/*         <div className="img"> */}
+      {/*           <img src={Blog1} alt="blog pic" /> */}
+      {/*         </div> */}
+      {/*         <h3> */}
+      {/*           <a href="blog-single.html">5 steps to becoming GDPR compliant on mobile apps</a> */}
+      {/*         </h3> */}
+      {/*         <div className="text"> */}
+      {/*           Mauris tellus sem, ultrices varius nisl at, convallis iaculis mauris. Sed eget sem vitae */}
+      {/*           purus tempus dignissim. */}
+      {/*         </div> */}
+      {/*         <a href="blog-single.html" className="btn-primary-line">Read More</a> */}
+      {/*       </div> */}
+      {/*     </div> */}
+      {/*     <div className="col-lg-4 col-md-6 col-sm-12"> */}
+      {/*       <div className="blog-post-thumb"> */}
+      {/*         <div className="img"> */}
+      {/*           <img src={Blog2} alt="blog pic" /> */}
+      {/*         </div> */}
+      {/*         <h3> */}
+      {/*           <a href="blog-single.html">Measuring app success through mobile analytics</a> */}
+      {/*         </h3> */}
+      {/*         <div className="text"> */}
+      {/*           Cras imperdiet faucibus sem, a dignissim urna feugiat sed. Interdum et malesuada fames ac */}
+      {/*           ante ipsum primis in faucibus. */}
+      {/*         </div> */}
+      {/*         <a href="blog-single.html" className="btn-primary-line">Read More</a> */}
+      {/*       </div> */}
+      {/*     </div> */}
+      {/*     <div className="col-lg-4 col-md-6 col-sm-12"> */}
+      {/*       <div className="blog-post-thumb"> */}
+      {/*         <div className="img"> */}
+      {/*           <img src={Blog3} alt="blog pic" /> */}
+      {/*         </div> */}
+      {/*         <h3> */}
+      {/*           <a href="blog-single.html">How accessibility will influence your app development</a> */}
+      {/*         </h3> */}
+      {/*         <div className="text"> */}
+      {/*           Quisque euismod nec lacus sit amet maximus. Ut convallis sagittis lorem auctor malesuada. */}
+      {/*           Morbi auctor tortor eu risus condimentum. */}
+      {/*         </div> */}
+      {/*         <a href="blog-single.html" className="btn-primary-line">Read More</a> */}
+      {/*       </div> */}
+      {/*     </div> */}
+      {/*   </div> */}
+      {/* </div> */}
+      {/* </section> */}
       {/* <!-- ***** Blog End ***** --> */}
 
       <Footer/>

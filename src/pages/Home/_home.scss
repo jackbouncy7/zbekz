@@ -273,6 +273,7 @@ home
 
 .parallax {
   min-height: 280px;
+  margin-bottom: 100px; // added temporarily till the blog section is included
   position: relative;
   background: url('../../../public/assets/images/parallax.jpg') center no-repeat;
   background-attachment: fixed;

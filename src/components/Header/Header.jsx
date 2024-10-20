@@ -53,9 +53,9 @@ const Header = () => {
                 <li>
                   <Link style={{ color: scrolled ? '#3B566E' : 'white' }} to="/services">SERVICES</Link>
                 </li>
-                <li>
-                  <a style={{ color: scrolled ? '#3B566E' : 'white' }} href="blog.html">BLOG</a>
-                </li>
+                {/* <li> */}
+                {/*   <a style={{ color: scrolled ? '#3B566E' : 'white' }} href="blog.html">BLOG</a> */}
+                {/* </li> */}
                 <li>
                   <Link style={{ border: scrolled ? '1px solid #4886FF' : '1px solid white', color: scrolled ? '#4886FF' : 'white' }} to="/contact" className="btn-nav-line">
                     CONTACT
