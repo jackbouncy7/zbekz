@@ -17,10 +17,10 @@ const Footer = () => {
         <div className="col-lg-2 col-md-4 col-sm-6 col-6">
           <h5>Helpful Links</h5>
           <ul className="footer-nav">
-            <li><a href="#"><i className="fa fa-angle-right"></i><span>Our Work</span></a></li>
+            <li><a href="#"><i className="fa fa-angle-right"></i><span>Products</span></a></li>
             <li><a href="#"><i className="fa fa-angle-right"></i><span>About Us</span></a></li>
             <li><a href="#"><i className="fa fa-angle-right"></i><span>Services</span></a></li>
-            <li><a href="#"><i className="fa fa-angle-right"></i><span>Blog</span></a></li>
+            {/* <li><a href="#"><i className="fa fa-angle-right"></i><span>Blog</span></a></li> */}
             <li><a href="#"><i className="fa fa-angle-right"></i><span>Contact</span></a></li>
           </ul>
         </div>
@@ -52,7 +52,7 @@ const Footer = () => {
       </div>
       <div className="row">
         <div className="col-lg-12">
-          <p className="copyright">© 2021 Beapp. All Rights Reserved.</p>
+          <p className="copyright">© 2024 Zbekz group. All Rights Reserved.</p>
         </div>
       </div>
       </div>

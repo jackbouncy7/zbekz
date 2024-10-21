@@ -89,7 +89,7 @@ const AboutUs = () => {
           <div className="col-lg-12">
             <div className="info">
               <p>We design and develop <span>mobile apps</span> that delight your users and grow your business.</p>
-              <a className="btn-white-line" href="#">Contact Us</a>
+              <Link className="btn-white-line" to="/contact">Contact Us</Link>
             </div>
           </div>
         </div>

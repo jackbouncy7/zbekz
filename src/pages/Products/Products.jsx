@@ -23,20 +23,6 @@ const Products = () => {
 					</div>
 				</div>
 				</Link>
-
-				<Link to='/'>
-					<div className='products__box'>
-					<div className='products__content'>
-						<h3 className='products__title--content'>FDA-compliant software for stroke patients with telemedicine features to facilitate remote care</h3>
-						<span className='products__devices'>IOS & Android, Web</span>
-						<span className='products__category'>Healthcare</span>
-						<span className='products__country'>US</span>
-						<div className='products__button-link'>
-						<Link className='products__link' to='/'>Explore more  <i className="fa fa-arrow-right"></i> </Link>
-						</div>
-					</div>
-				</div>
-				</Link>
 			</div>
 		</section>
 		</>

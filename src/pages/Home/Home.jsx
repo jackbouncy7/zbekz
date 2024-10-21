@@ -1,4 +1,5 @@
 import { lazy } from "react";
+import { Link } from "react-router-dom";
 const Header = lazy(() => import("@components/Header/Header"));
 const Footer = lazy(() => import("@components/Footer/Footer"));
 const Team = lazy(() => import("@components/Team/Team"));
@@ -46,9 +47,9 @@ const Home = () => {
                   grow your business. Enterprise-grade development combined with
                   outstanding design.
                 </p>
-                <a className="btn-white-line" href="#">
+                <Link className="btn-white-line" to="/products">
                   ALL WORKS
-                </a>
+                </Link>
               </div>
               <div className="offset-lg-1 col-lg-5 col-md-12 align-self-center">
                 <div className="apps">
@@ -146,9 +147,9 @@ const Home = () => {
                   Praesent tortor nulla, ullamcorper.
                 </p>
               </div>
-              <a href="#" className="btn-primary-line">
+              <Link to="/services" className="btn-primary-line">
                 SERVICES
-              </a>
+              </Link>
             </div>
             {/* <!-- ***** Home About End ***** --> */}
 
