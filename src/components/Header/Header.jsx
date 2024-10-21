@@ -61,7 +61,7 @@ const Header = () => {
                 {/*   <a style={{ color: scrolled ? '#3B566E' : 'white' }} href="blog.html">BLOG</a> */}
                 {/* </li> */}
                 <li>
-                  <Link style={{ border: switchHeader || scrolled ? '1px solid #4886FF' : '1px solid white', color: switchHeader || scrolled ? '#4886FF' : 'white' }} to="/contact" className="btn-nav-line">
+                  <Link style={{ border: switchHeader || scrolled ? '1px solid #4886FF' : '1px solid white', color: switchHeader || scrolled ? '#4886FF' : '' }} to="/contact" className="btn-nav-line">
                     CONTACT
                   </Link>
                 </li>

@@ -277,6 +277,7 @@ home
   position: relative;
   background: url('../../../public/assets/images/parallax.jpg') center no-repeat;
   background-attachment: fixed;
+  background-size: 100%;
 }
 .parallax:before {
   content: "";
