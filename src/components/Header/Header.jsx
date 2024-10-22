@@ -27,7 +27,7 @@ const Header = () => {
   }, []);
 
   const headerClasses = scrolled ? 'header-area scrolled' : 'header-area';
-  const isProductsPage = location.pathname === '/products';
+  const isProductsPage = location.pathname.startsWith('/products');
   const switchHeader = isProductsPage ? 'header-area switched' : '';
 
   return (

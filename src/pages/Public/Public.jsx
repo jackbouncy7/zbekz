@@ -8,6 +8,7 @@ const AboutUs = lazy(() => import("@pages/AboutUs/AboutUs"));
 const Services = lazy(() => import("@pages/Services/Services"));
 const Contact = lazy(() => import("@pages/Contact/Contact"));
 const Products = lazy(() => import("@pages/Products/Products"));
+const ProductSingle = lazy(() => import("@pages/ProductSingle/ProductSingle"));
 
 export const Public = () => {
   return (
@@ -31,6 +32,7 @@ export const Public = () => {
           <Route path="/services" element={<Services />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/products" element={<Products />} />
+          <Route path="/products/:id" element={<ProductSingle />} />
       </Routes>
       </Suspense>
       {/* <Footer /> */}
