@@ -64,23 +64,23 @@ console.log('OBJECT', product)
 	    		<div className='container'>
 	    			<div className='product-item__wrapper'>
 	    			<div className='product-item__side'>
-	    				<div className='product-item__info-block'>
-	    					<p className='product-item__headText'>Industry</p>
-		    				<span className='product-item__val'>Fintech</span>
-	    				</div>
+	    				{/* <div className='product-item__info-block'> */}
+	    				{/* 	<p className='product-item__headText'>Industry</p> */}
+		    			{/* 	<span className='product-item__val'>Fintech</span> */}
+	    				{/* </div> */}
 
 	    				<div className='product-item__info-block'>
 	    					<p className='product-item__headText'>Supported devices</p>
-		    				<span className='product-item__val'>Web, iPhone, iPad, Android</span>
+		    				<span className='product-item__val'>{product?.tags.join(', ')}</span>
 	    				</div>
 	    				
 	    				<div className='product-item__info-block'>
 	    					<p className='product-item__headText'>Available on</p>
 		    				<span className='product-item__val'>
-		    					<a href="https://google.com" target='_blank'>
+		    					<a href={product?.appstore} target='_blank'>
 		    						<img src={AppStoreLogo} width='150' alt="app store logo" />
 		    					</a>
-		    					<a href="https://google.com" target='_blank'>
+		    					<a href={product?.playmarket} target='_blank'>
 		    						<img src={PlayStoreLogo} width='150' height='50' alt="play store logo" />
 		    					</a>
 		    				</span>
