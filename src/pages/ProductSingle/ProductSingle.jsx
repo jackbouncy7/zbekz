@@ -1,5 +1,7 @@
-import { lazy } from 'react'; 
-import { Link } from "react-router-dom";
+import { lazy, useState, useEffect } from 'react'; 
+import { Link, useParams } from "react-router-dom";
+import { db } from '../../firebase.js';
+import { doc, getDocs, collection, query, where } from 'firebase/firestore';
 const Header = lazy(() => import("@components/Header/Header"));
 import BgProduct from "@images/products/project1-detailed.png";
 import AppStoreLogo from "@images/download-apple-store.png";
@@ -7,6 +9,24 @@ import PlayStoreLogo from "@images/download-google-play.png";
 import './_productSingle.scss';
 
 const ProductSingle = () => {
+	const { id } = useParams();
+	const [product, setProduct] = useState(null);
+
+	const fetchProduct = async() => {
+		const q = query(collection(db, "products"), where("id", "==", id));
+		const querySnapshot = await getDocs(q);
+		querySnapshot.forEach((doc) => {
+		setProduct(doc.data());
+	});
+  }
+
+	useEffect(()=> {
+		fetchProduct();
+	}, [id]);
+
+
+console.log('OBJECT', product)
+
 	return (
 		<>
 		<Header/>
@@ -21,7 +41,7 @@ const ProductSingle = () => {
 		          <Link to="/products">Products</Link>
 		        </li>
 		        <li className="product-single__breadcrumb-item active" aria-current="page">
-		          [ Product name ]
+		          {product?.name}
 		        </li>
 		      </ol>
 		    </nav>
@@ -29,7 +49,7 @@ const ProductSingle = () => {
 		    {/* Details start */}
 		    <div className='product-details'>
 		    	<div className='product-details__titleWrapper'>
-			    	<h2 className='product-details__title'>Web 3.0 crypto wallet makes a decentralized experience secure for 5 million users</h2>
+			    	<h2 className='product-details__title'>{product?.name}</h2>
 		    	</div>
 		    </div>
 		    {/* Details end */}
